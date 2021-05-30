@@ -1,96 +1,89 @@
 <template>
-  <q-page class="flex flex-center page-bg">
-    <!-- <img alt="Quasar logo" src="~assets/quasar-logo-full.svg" />
-
-    <q-card class="my-card blurred-box">
-      <q-item>
-        <q-item-section avatar>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/img/avatar2.jpg" />
-          </q-avatar>
-        </q-item-section>
-
-        <q-item-section>
-          <q-item-label>Title</q-item-label>
-          <q-item-label caption>Subhead</q-item-label>
-        </q-item-section>
-      </q-item>
-
-      <img src="https://cdn.quasar.dev/img/parallax2.jpg" />
-    </q-card>
-
-    <div class="my-card blurred-box">hell</div> -->
-
-    <div style="z-index:1;">
-      <h1>Hello!</h1>
-
-      <q-card class="my-card blurred-box">
-        <q-item>
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="https://cdn.quasar.dev/img/avatar2.jpg" />
-            </q-avatar>
-          </q-item-section>
-
-          <q-item-section>
-            <q-item-label>Title</q-item-label>
-            <q-item-label caption>Subhead</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <img src="https://cdn.quasar.dev/img/parallax2.jpg" />
-      </q-card>
-
-      <q-card class="my-card blurred-box">
-        <q-item>
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="https://cdn.quasar.dev/img/avatar2.jpg" />
-            </q-avatar>
-          </q-item-section>
-
-          <q-item-section>
-            <q-item-label>Title</q-item-label>
-            <q-item-label caption>Subhead</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <img src="https://cdn.quasar.dev/img/parallax2.jpg" />
-      </q-card>
-      <p v-for="i in 100" :key="i">
-        Lorem ipsum dolor
-      </p>
-
-      <q-card class="my-card blurred-box">
-        <q-item>
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="https://cdn.quasar.dev/img/avatar2.jpg" />
-            </q-avatar>
-          </q-item-section>
-
-          <q-item-section>
-            <q-item-label>Title</q-item-label>
-            <q-item-label caption>Subhead</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <img src="https://cdn.quasar.dev/img/parallax2.jpg" />
-      </q-card>
-    </div>
-
-    <!-- <div class="night">
-      
-    </div> -->
-
-    <div class="night">
+  <q-page class="flex flex-center bg-primary">
+    <div class="nightv2 flex flex-center">
       <div
         class="shooting_star"
         style="z-index:0"
         v-for="i in 25"
         :key="i"
       ></div>
+
+      <div class="docpage q-px-lg" style="z-index:1;">
+        <div class="text-center glow">
+          <h2 class="text-bold">Hello!</h2>
+          <p class="text-h4">My name is Juan Carvajal, Welcome!</p>
+          <div class="text-center">
+            <p class="text-subtitle2 q-my-sm">
+              <span class="text-bold">Software Engineer (Fullstack)</span
+              ><q-icon class="q-ml-sm" name="fas fa-rocket"></q-icon>
+            </p>
+
+            <q-separator inset></q-separator>
+            <p class="text-subtitle2 q-my-sm">
+              <span class="text-bold">Software Architect</span
+              ><q-icon class="q-ml-sm" name="fas fa-drafting-compass"></q-icon>
+            </p>
+            <q-separator inset></q-separator>
+            <p class="text-subtitle2 q-my-sm">
+              <span class="text-bold">Researcher</span
+              ><q-icon class="q-ml-sm" name="fas fa-flask"></q-icon>
+            </p>
+          </div>
+
+          <p class="text-body1 text-weight-light">
+            I am an avid problem solver, a fast and self-taught learner who is
+            always looking for an opportunity to better myself. My main interest
+            is to be at the forefront of the ongoing industrial revolution that
+            is going to transform traditional manufacturing, services and TI
+            industries, using modern and avant-garde technologies. I also have
+            interest in modern topics such as automation, data science, machine
+            learning and agile development, among others.
+          </p>
+        </div>
+      </div>
     </div>
+
+    <div>
+      <p class="text-caption" v-for="i in 25" :key="i">
+        Lorem Ipsum
+      </p>
+    </div>
+
+    <!-- <div>
+      <div class="docpage" style="z-index:1;">
+        <div class="text-center glow">
+          <h2 class="text-bold">Hello!</h2>
+          <p class="text-h4">My name is Juan Carvajal, Welcome!</p>
+          <div class="text-center">
+            <p class="text-subtitle2 q-my-sm">
+              <span class="text-bold">Software Engineer (Fullstack)</span
+              ><q-icon class="q-ml-sm" name="fas fa-rocket"></q-icon>
+            </p>
+
+            <q-separator inset></q-separator>
+            <p class="text-subtitle2 q-my-sm">
+              <span class="text-bold">Software Architect</span
+              ><q-icon class="q-ml-sm" name="fas fa-drafting-compass"></q-icon>
+            </p>
+            <q-separator inset></q-separator>
+            <p class="text-subtitle2 q-my-sm">
+              <span class="text-bold">Researcher</span
+              ><q-icon class="q-ml-sm" name="fas fa-flask"></q-icon>
+            </p>
+          </div>
+
+          <p class="text-body1 text-weight-light">
+            I am an avid problem solver, a fast and self-taught learner who is
+            always looking for an opportunity to better myself. My main interest
+            is to be at the forefront of the ongoing industrial revolution that
+            is going to transform traditional manufacturing, services and TI
+            industries, using modern and avant-garde technologies. I also have
+            interest in modern topics such as automation, data science, machine
+            learning and agile development, among others.
+          </p>
+        </div>
+      </div>
+    </div> -->
   </q-page>
 </template>
 
@@ -106,12 +99,20 @@ body {
 
 $shooting-time: 3000ms;
 
+.nightv2 {
+  position: relative;
+  width: 100%;
+  height: calc(100vh);
+  margin-top: -50px;
+  background: linear-gradient(0deg, $primary 0%, $dark 100%);
+}
+
 .night {
   position: absolute;
   width: 100%;
-  height: 100%;
-  //transform: rotateZ(90deg);
-  //animation: sky 200000ms linear infinite;
+  height: calc(100% + 50px);
+  margin-top: -50px;
+  background: linear-gradient(0deg, $primary 0%, $dark 100%);
 }
 
 .shooting_star {
@@ -250,5 +251,6 @@ $shooting-time: 3000ms;
   /* background: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3) no-repeat;
   background-size: cover; */
   background: radial-gradient(ellipse at bottom, $primary 0%, $dark 100%);
+  margin-top: -50px;
 }
 </style>

@@ -1,26 +1,38 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header class="transparent">
       <div class="glow">
-        <q-toolbar class="bg-primary">
-        <q-btn
-          flat
-          round
-          dense
-          icon="menu"
-          class="q-mr-sm"
-          aria-label="Menu"
-          @click="leftDrawerOpen = !leftDrawerOpen"
-        />
-        <q-space />
-        <q-btn flat round dense icon="search" class="q-mr-xs" />
-        <q-btn flat round dense icon="group_add" />
-      </q-toolbar>
-      <q-toolbar inset class="bg-primary">
-        <q-toolbar-title><strong>Quasar</strong> Framework</q-toolbar-title>
-      </q-toolbar>
+        <q-toolbar class="transparent">
+          <q-btn
+            flat
+            icon="link"
+            class="q-mr-sm"
+            aria-label="Menu"
+            @click="leftDrawerOpen = !leftDrawerOpen"
+          />
+          <q-space />
+          <q-btn-dropdown color="primary" flat dropdown-icon="change_history">
+            <q-list>
+              <q-item clickable v-close-popup>
+                <q-btn flat icon="link">hola</q-btn>
+              </q-item>
+
+              <q-item clickable v-close-popup>
+                <q-item-section>
+                  <q-item-label class="glow">Videos</q-item-label>
+                </q-item-section>
+              </q-item>
+
+              <q-item clickable v-close-popup>
+                <q-item-section>
+                  <q-item-label>Articles</q-item-label>
+                </q-item-section>
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
+        </q-toolbar>
       </div>
-      
+
       <!-- <q-toolbar>
         <q-btn
           flat
@@ -124,8 +136,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.drawer-bg{
-  background: rgb(2,0,36);
-background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(0,212,255,1) 100%);
+.drawer-bg {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 </style>
